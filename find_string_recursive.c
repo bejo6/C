@@ -21,7 +21,7 @@ int cr( char* a, const char* b){
   regex_t c;
   int e;
   int f = 0;
-  e = regcomp(&c, b, 0);
+  e = regcomp(&c, b, REG_ICASE);
   if (e) {
     return 0;
   }
